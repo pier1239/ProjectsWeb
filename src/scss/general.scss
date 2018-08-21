@@ -72,4 +72,27 @@
 	background-size: cover;
 	height: 100vh;
 	width: 100%;
+    text-align: center;
+   display: flex;
+	.entete {
+	position: relative;
+	color: #FFFFFF;
+	margin: auto;
+	width: 40%;
+	height: 400px;
+	vertical-align: middle;
+	}
+
+	span {
+	align: center;
+	float: center;
+	width: 30%;
+	font-size: 44px;
+	letter-spacing: 8px;
+	}
+}
+
+#portfolio {
+	height: 100vh;
+	width: 100%;
 }
