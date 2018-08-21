@@ -21,7 +21,7 @@ gulp.task('img', function() {
 });
 
 
-// Images compression
+// js destination
 gulp.task('scripts', function() {
   return gulp.src('src/js/**/*.js')
     .pipe(gulp.dest('app/js/'));
