@@ -1,89 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-           <!-- Pages de style-->
+         <!--Pages de style-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>Pierre-Luc Doré</title>
-          <!-- Menu-->
-
+         
 </head>
 <body>
+         <!--Bouton du menu-->
+<div class="navigation-btn">
+    <div class="barre"></div>
+	<div class="barre"></div>
+	<div class="barre"></div>
+</div>
+         <!--Dans le menu-->
+<div class="navigation">
+    <ul>
+	<li class="scroll"> <a href="#" onclick="$('#home').animatescroll();"> <span>Home</span> </a> </li>
+	<li class="scroll"> <a href="#" onclick="$('#portfolio').animatescroll();"> <span>Portfolio</span> </a> </li>
+	<li class="scroll"> <a href="#" onclick="$('#skills').animatescroll();"> <span>Skills</span> </a> </li>	
+    </ul>
+</div>   <!--Fin du menu -->
 
-	<div class="navigation-btn">
-		<div class="barre"></div>
-		<div class="barre"></div>
-		<div class="barre"></div>
+         <!-- Texte d'intro-->
+<section class="titre" id="home">
+    <div class="entete">
+	<span class="name"><p>PIERRE-LUC DORÉ </p></span>
+	<span class="job"><p>Programmeur Web </p> </span>
+	<div class="aboutdiv"><a href="#" onclick="$('#portfolio').animatescroll();" class="about">About me</a></div>
+    </div>
+</section>
+        <!-- section About me-->
+<section id="portfolio">
+<div class="sectionabout">
+	<div class="aboutme">
+	<p class="titlesec">SUMMARY ABOUT ME</p>
+	<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+	<p class="titledesc">MY EDUCATION</p>
+	<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
 	</div>
-
-	<div class="navigation">
-		<ul>
-			<li class="scroll"> <a href="#" onclick="$('#home').animatescroll();"> <span>Home</span> </a> </li>
-			<li class="scroll"> <a href="#" onclick="$('#portfolio').animatescroll();"> <span>Portfolio</span> </a> </li>
-			<li class="scroll"> <a href="#" onclick="$('#skills').animatescroll();"> <span>Skills</span> </a> </li>	
-	   </ul>
-	</div> <!-- End of the menu -->
-
-	<section class="titre" id="home">
-		<div class="entete">
-			<span class="name"><p>PIERRE-LUC DORÉ </p></span>
-		    <span class="job"><p>Programmeur Web </p> </span>
-		</div>
-		
-	</section>
-
-	<section id="portfolio">
-		<div class="sectionabout">
-		<div class="aboutme">
-		<p class="titlesec">SUMMARY ABOUT ME</p>
-		<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-
-		<p class="titledesc">MY EDUCATION</p>
-		<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-		</div>
-
-			<div class="aboutme2">
-		<p class="titledesc">MY CAREER</p>
-		<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-
-		<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-		
-		</div>
-		</div>
-
-		<div class="achievedivtitle">
-			<div class="achievetitle"><p>MY ACHIEVEMENTS</p></div>
-		</div>
-        <div class="achievedivdesc">
-		<div class="achievedesc">
-			<div class="webdiv"> 
-			<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
-			<div class="txt"><span class="achievetext">Site Web</span></div>
-
-
-		   </div>
-
-
-
-			<div class="appdiv"> 
-			<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
-			<div class="txt"><span class="achievetext">Application Mobile</span></div>
-
-
-			</div>  
-
-			<div class="bddiv"> 
-				<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
-			    <div class="txt"><span class="achievetext">Base de données</span></div>
-			</div>
-
-		</div>
-		</div>
-	</section>
-
-	<section id="skills">
-		<h1>Competences</h1>
-		<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>>
-	</section>
+    <div class="aboutme2">
+	<p class="titledesc">MY CAREER</p>
+	<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+    <p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+	</div>
+</div>
+       <!-- Texte des achievement-->
+<div class="achievedivtitle">
+    <div class="achievetitle"><p>MY ACHIEVEMENTS</p></div>
+</div>
+      <!-- Description des achievements-->
+<div class="achievedivdesc">
+<div class="achievedesc">
+	<div class="webdiv"> 
+	<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
+	<div class="txt"><span class="achievetext">Site Web</span></div>
+    </div>
+	<div class="appdiv"> 
+	<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
+	<div class="txt"><span class="achievetext">Application Mobile</span></div>
+	</div>  
+    <div class="bddiv"> 
+	<div class="img"><img class="imgachieve" src="../app/img/websiteicon.png"></div>
+	<div class="txt"><span class="achievetext">Base de données</span></div>
+	</div>
+</div>
+</div>
+</section>
+      <!-- Section skills-->
+<section id="skills">
+	<h1>Competences</h1>
+	<p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>>
+</section>
 
 	 <!-- Jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
