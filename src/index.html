@@ -4,41 +4,66 @@
          <!--Pages de style-->
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<title>Pierre-Luc Doré</title>
-         
+
+	    <!--META-->
+    <meta charset="UTF-8">   
 </head>
 <body>
-         <!--Bouton du menu-->
+         <!--Bouton du menu
 <div class="navigation-btn">
     <div class="barre"></div>
 	<div class="barre"></div>
 	<div class="barre"></div>
 </div>
-         <!--Dans le menu-->
+-->
+         <!--Dans le menu
 <div class="navigation">
     <ul>
 	<li class="scroll"> <a href="#" onclick="$('#home').animatescroll();"> <span>Home</span> </a> </li>
 	<li class="scroll"> <a href="#" onclick="$('#portfolio').animatescroll();"> <span>Portfolio</span> </a> </li>
 	<li class="scroll"> <a href="#" onclick="$('#skills').animatescroll();"> <span>Skills</span> </a> </li>	
     </ul>
-</div>   <!--Fin du menu -->
+</div> 
+-->  <!--Fin du menu -->
+
+
 
          <!-- Texte d'intro-->
 <section class="titre" id="home">
+
+	<div class="upmenu">
+
+		<div class="leftoption">
+			<a href="#" onclick="$('#home').animatescroll();"> Home </a>
+			<a href="#" onclick="$('#portfolio').animatescroll();">Portfolio </a>
+	   </div>
+	   <div class="rightoption">
+	   	<a href="#" onclick="$('#skills').animatescroll();"> Skills </a> 
+	   	<a href="#" onclick="$('#contact').animatescroll();"> Contact </a> 
+	   </div>
+		
+
+	</div>
     <div class="entete">
 	<span class="name"><p>PIERRE-LUC DORÉ </p></span>
-	<span class="job"><p>Programmeur Web </p> </span>
+	<span class="job"><p>Programmeur Web </p></span>
 	<div class="aboutdiv"><a href="#" onclick="$('#portfolio').animatescroll();" class="about">About me</a></div>
     </div>
 </section>
         <!-- section About me-->
 <section id="portfolio">
-<div class="sectionabout">
+	<div class="divtitre">
+	<div class="titreport"><h2 class="titlesec">SUMMARY ABOUT ME</h2></div>
+	<div class="titreport2"></div>
+	</div>
+    <div class="sectionabout">
 	<div class="aboutme">
-	<h2 class="titlesec">SUMMARY ABOUT ME</h2>
+	<div class="divtext">
 	<span class="lettre">L</span>
 	<span class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</span>
 	<p class="titledesc">MY EDUCATION</p>
 	<p class="descsec">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+	</div>
 	</div>
     <div class="aboutme2">
 	<p class="titledesc">MY CAREER</p>
@@ -70,9 +95,14 @@
 </section>
       <!-- Section skills-->
 <section id="skills">
+
+	<div class="divtitre">
+	<div class="titreport"><h2 class="titlesec">ABOUT MY SKILLS</h2></div>
+	<div class="titreport2"></div>
+	</div>
 <div class="sectionskill">
 	<div class="catskillone">
-	<h2 class="titlesec">ABOUT MY SKILLS</h2>
+	
 	<h4 class="first">programmation web</h4>
 	<p>Nunc rhoncus lorem metus, at rhoncus nulla suscipit vitae? Aenean pretium semper condimentum! Nullam varius nibh et nisi porta consequat. In at scelerisque sed.</p>
    
@@ -119,44 +149,100 @@
     </div> <!-- End Skill Bar -->
 
 	</div>
-	<div class="catskilltwo">
-    <h4 class="first">application</h4>
-	<p>Nunc rhoncus lorem metus, at rhoncus nulla suscipit vitae? Aenean pretium semper condimentum! Nullam varius nibh et nisi porta consequat. In at scelerisque sed.</p>
-	<div id="bars">
-	<div class="bar" data-percent="70">
-	<h3>JAVA</h3>
-	<canvas class="bar-circle" width="70" height="70"></canvas>
-	</div>
-	<div class="bar" data-percent="65">
-	<h3>VB.NET</h3>
-	<canvas class="bar-circle" width="70" height="70"></canvas>
-	</div>
-	<div class="bar" data-percent="43">
-	<h3>C++</h3>
-	<canvas class="bar-circle" width="70" height="70"></canvas>
-	</div>
-	<div class="bar" data-percent="65">
-	<h3>SQL SERVER</h3>
-	<canvas class="bar-circle" width="70" height="70"></canvas>
-	</div>
-	<div class="bar" data-percent="40">
-	<h3>CISCO</h3>
-	<canvas class="bar-circle" width="70" height="70"></canvas>
-	</div>
-	
-</div>	
 
+<div class="catskilltwo">
+    <h4 class="first">application</h4>
+
+	<p>Nunc rhoncus lorem metus, at rhoncus nulla suscipit vitae? Aenean pretium semper condimentum! Nullam varius nibh et nisi porta consequat. In at scelerisque sed.</p>
+
+<div class="appdiv">
+	<img src="../app/img/appicon2.png" class="iconapp">
+	     <div class="skillbar clearfix " data-percent="40%">
+
+	<div class="skillbar-bar" style="background: #2ecc71;"></div>
+	<div class="skill-bar-percent">40%</div>
+    </div> <!-- End Skill Bar -->
+
+</div>
+
+<div class="appdiv">
 	
+	 <img src="../app/img/appicon1.png" class="iconapp">
+
+    <div class="skillbar clearfix " data-percent="70%">
+	
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">70%</div>
+    </div> <!-- End Skill Bar -->
+</div>
+
+<div class="appdiv">
+	
+	 <img src="../app/img/appicon3.png" class="iconapp">
+
+    <div class="skillbar clearfix " data-percent="70%">
+	
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">70%</div>
+    </div> <!-- End Skill Bar -->
+</div>
+
+<div class="appdiv">
+	
+	 <img src="../app/img/appicon4.png" class="iconapp">
+
+    <div class="skillbar clearfix " data-percent="70%">
+	
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+	<div class="skill-bar-percent">70%</div>
+    </div> <!-- End Skill Bar -->
+</div>
+
+
+   
+      
+
 </div>
 </section>
 
+<section id="contact">
+	<h2 class="titlecon">CONTACT ME</h2>
+<div class="sectioncontact">
+	<div class="contactone">
+    <input type="text" name="name" class="editnormal" placeholder="Your name">   
+    <input type="text" name="email" class="editnormal" placeholder="Your e-mail">
+	</div>
+    <div class="contacttwo">
+    <input type="text" name="subject" class="editlong" placeholder="Subject">
+	</div>
+	<div class="contactthree">
+	<input type="text" name="message" class="editlarge" placeholder="Message">
+	</div>
+	<div class="buttondiv">
+		<button type="button" class="butsend">Send a message</button>
+	</div>
+</div>
+</div>
+</section>
+
+<div class="piedpage">
+	<span>© 2018. Tous droits réservés. Pierre-Luc Doré</span>
+
+</div>
+
+
+
 	 <!-- Jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <!-- progress bar-->
+<script src="./js/circleprogress.js"></script>
  <!-- animatescroll-->
 <script src="./js/animatescroll.js"></script>
-
  <!-- burger menu-->
 <script src="./js/menu.js"></script>
+
+
 
 
 
