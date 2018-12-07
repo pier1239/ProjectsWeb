@@ -1,6 +1,15 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
+
+var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
+ 
+gulp.task('deploy', function() {
+  return gulp.src('./app/**/*')
+    .pipe(ghPages());
+});
+
 // Translate SASS to CSS
 gulp.task('sass', function() {
   return gulp.src('src/scss/style.scss')
@@ -20,6 +29,12 @@ gulp.task('img', function() {
     .pipe(gulp.dest('app/img/'));
 });
 
+// pdf compression
+gulp.task('pdf', function() {
+  return gulp.src('src/document/*')
+    .pipe(gulp.dest('app/pdf/'));
+});
+
 
 // js destination
 gulp.task('scripts', function() {
@@ -28,12 +43,12 @@ gulp.task('scripts', function() {
 });
 
 // Default task
-gulp.task('default', ['sass', 'html', 'img', 'scripts'], function() {
+gulp.task('default', ['sass', 'html', 'img', 'pdf', 'scripts'], function() {
   console.log('******** Default task done ********');
 });
 
 // Gulp watch
-gulp.task('watch', ['sass', 'html', 'img', 'scripts'], function() {
+gulp.task('watch', ['sass', 'html', 'img', 'pdf', 'scripts'], function() {
   console.log('******** Gulp is watching you ********');
   gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/**/*.html', ['html']);
