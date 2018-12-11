@@ -1,5 +1,5 @@
 var express = require("express");
-require('dotenv').config();
+
 var app     = express();
 const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/app'));
@@ -12,10 +12,10 @@ app.get('/',function(req,res){
 
 app.post('/send',function(req,res){
 
-console.log('test ');  
+require('env2')('sendgrid.env');    // loads all entries into process.env
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDMAIL_KEY);
 const msg = {
 to: 'piertest1239@gmail.com',
 from: req.body.email,
