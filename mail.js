@@ -1,6 +1,6 @@
 var express = require("express");
 
-var app     = express();
+var app = express();
 const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/app'));
 app.use(express.static(__dirname + '/css'));
@@ -36,5 +36,5 @@ res.redirect('/');
 
 
 
-app.listen(3000);
+app.listen(80);
 
