@@ -1,4 +1,5 @@
 var express = require("express");
+require('dotenv').config();
 var app     = express();
 const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/app'));
@@ -11,10 +12,10 @@ app.get('/',function(req,res){
 
 app.post('/send',function(req,res){
 
-  
+console.log('test ');  
 
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey("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");
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const msg = {
 to: 'piertest1239@gmail.com',
 from: req.body.email,
