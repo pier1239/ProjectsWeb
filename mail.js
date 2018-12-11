@@ -10,7 +10,7 @@ app.get('/',function(req,res){
 
 });
 
-app.post('/send',function(req,res){
+app.post('/',function(req,res){
 
 require('env2')('sendgrid.env');    // loads all entries into process.env
 
