@@ -3,12 +3,12 @@ var express = require("express");
 var app = express();
 const bodyParser = require('body-parser');
 app.use(express.static(__dirname + '/app'));
-app.use(express.static(__dirname + '/css'));
+//app.use(express.static(__dirname + '/css'));
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/',function(req,res){
 
-res.render('app/index.html')
+res.render('app/index')
 });
 
 app.post('/',function(req,res){
