@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://pier1239.github.io/Portfolio/",
   "description": "mon portfolio professionel\u001b[D\u001b[Dnel",
   "main": "index.js",
   "dependencies": {
