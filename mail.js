@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/',function(req,res){
 
+res.render('app/index.html')
 });
 
 app.post('/',function(req,res){
