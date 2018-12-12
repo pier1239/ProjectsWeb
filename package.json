@@ -1,15 +1,15 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "homepage": "https://pier1239.github.io/Portfolio/",
   "description": "mon portfolio professionel\u001b[D\u001b[Dnel",
-  "main": "index.js",
+  "main": "mail.js",
   "dependencies": {
     "@sendgrid/mail": "^6.3.1",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
     "env2": "^2.2.2",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "hamburgers": "^0.9.3",
     "jquery": "^3.3.1",
     "react-circular-progressbar": "^1.0.0",
@@ -22,7 +22,9 @@
     "gulp-sass": "^4.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node mail.js"
+   
   },
   "repository": {
     "type": "git",
