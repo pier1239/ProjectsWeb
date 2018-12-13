@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/',function(req,res){
 
-res.sendFile('/index.html');
+res.sendFile('index.html');
  
 
 });
