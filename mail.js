@@ -1,13 +1,16 @@
 var express = require("express");
-
+const ejs = require("ejs")
 var app = express();
 const bodyParser = require('body-parser');
-app.use(express.static(__dirname + '/app'));
-
+//app.use(express.static(__dirname + '/app'));
+//app.set('view engine', 'ejs')
 //app.use(express.static(__dirname + '/css'));
-app.use(bodyParser.urlencoded({ extended: false }));
+//app.use(bodyParser.urlencoded({ extended: false }));
 
+app.get('/',function(req,res){
 
+res.end("salut");
+});
 
 app.post('/',function(req,res){
 
