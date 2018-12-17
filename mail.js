@@ -3,7 +3,7 @@ const ejs = require("ejs")
 var app = express();
 var path    = require("path");
 const bodyParser = require('body-parser');
-app.use(express.static('app'));
+app.use(express.static('app/'));
 //app.use(express.static(__dirname + '/app'));
 //app.set('view engine', 'ejs')
 //app.use(express.static(__dirname + '/css'));
@@ -14,7 +14,7 @@ app.get('/',function(req,res){
 	
 	
 
- res.sendFile(path.join(__dirname+'/index.html'));
+ //res.sendFile(path.join(__dirname+'/index.html'));
 
 
 });
