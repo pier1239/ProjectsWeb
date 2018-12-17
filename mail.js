@@ -7,7 +7,7 @@ express()
   .use(express.static(path.join(__dirname, 'app')))
   .set('app', path.join(__dirname, 'app'))
 
-  .get('/', (req, res) => res.render('index'))
+  .get('/', (req, res) => end("salut"))
  	
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
