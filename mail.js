@@ -4,21 +4,19 @@ var app = express();
 var path    = require("path");
 const bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/app'));
+//app.use(express.static(__dirname + '/app'));
 //app.set('view engine', 'ejs')
 //app.use(express.static(__dirname + '/css'));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/',function(req,res){
-	
-
 
  res.sendFile(path.join(__dirname+'/index.html'));
 
-
-
 });
+
+
 
 app.post('/',function(req,res){
 
