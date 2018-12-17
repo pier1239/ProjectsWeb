@@ -4,10 +4,11 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 express()
-  .use('/', express.static('app'))
-
-  .get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
- 	
+  .use(express.static(path.join(__dirname, 'app')))
+  .set('app', path.join(__dirname, 'app'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('index'))
+ 
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
