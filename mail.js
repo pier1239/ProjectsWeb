@@ -4,10 +4,10 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 express()
-  .use(express.static(path.join(__dirname, 'app')))
+  .use(express.static(path.join(__dirname, '/app')))
   .set('app', path.join(__dirname, 'app'))
 
-  .get('/', (req, res) => )
+
  	
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
