@@ -1,25 +1,39 @@
-var express = require("express");
-const ejs = require("ejs")
-var app = express();
-var path    = require("path");
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static(__dirname + '/app'));
+
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
+express()
+  .use(express.static(path.join(__dirname, 'app')))
+  .set('app', path.join(__dirname, 'app'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('index'))
+  .get('/cool', (req, res) => res.send(cool()))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+
+//var express = require("express");
+//const ejs = require("ejs")
+//var app = express();
+//var path    = require("path");
+//const bodyParser = require('body-parser');
+//app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(express.static(__dirname + '/app'));
 //app.set('view engine', 'ejs')
 //app.use(express.static(__dirname + '/css'));
 
 
 
-app.get('/',function(req,res){
+//app.get('/',function(req,res){
 
 // res.sendFile(path.join(__dirname+'/index.html'));
 
-});
+//});
 
 
 
 
-app.post('/',function(req,res){
+//app.post('/',function(req,res){
 
 //require('env2')('sendgrid.env');    // loads all entries into process.env
 
@@ -41,9 +55,9 @@ app.post('/',function(req,res){
 
 
 
-});
+//});
 
 
 
-app.listen(process.env.PORT || 5000);
+//app.listen(process.env.PORT || 5000);
 
