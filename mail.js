@@ -29,7 +29,7 @@ res.render('index');
 
 app.post('/',function(req,res){
 
-require('env2')('sendgrid.env');    // loads all entries into process.env
+require('env2');   // loads all entries into process.env
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDMAIL_KEY);
