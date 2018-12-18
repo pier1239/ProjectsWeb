@@ -4,8 +4,8 @@ const path = require('path')
 const PORT = process.env.PORT || 5000
 
 express()
-  .use(express.static(path.join(__dirname, 'app')))
-  .set('app', path.join(__dirname, '/app'))
+  .use(express.static(path.join(__dirname, '/views')))
+  .set('views', path.join(__dirname, '/views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('index'))
  
