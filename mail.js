@@ -15,10 +15,12 @@ var express = require("express");
 const ejs = require("ejs")
 var app = express();
 var path    = require("path");
+var bodyParser = require('body-parser');
 app.use(express.static(path.join(__dirname, '/views')))
 app.set('views', path.join(__dirname, '/views'))
 app.set('view engine', 'ejs')
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 
 
@@ -29,7 +31,7 @@ res.render('index');
 
 app.post('/',function(req,res){
 
-require('env2');   // loads all entries into process.env
+require('env2')('sendgrid.env');    // loads all entries into process.env
 
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDMAIL_KEY);
