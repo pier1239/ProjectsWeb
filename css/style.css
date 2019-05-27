@@ -1337,8 +1337,6 @@
         float: left;
         font-family: "Montserrat", Arial, Tahoma, sans-serif;
         text-align: center;
-        border-style: solid #DBCCA8;
-        border-width: 1px;
         width: 20%;
         height: 600px;
         margin: 3%; }
@@ -1363,13 +1361,17 @@
         .service .divservice .divoption .option .butservice {
           margin-top: 7%;
           height: 65px;
-          width: 165px;
+          width: 285px;
           border-style: solid;
-          border-width: 6px;
-          background: #000;
+          border-width: 2px;
           border-radius: 35px;
           font-size: 18px;
+          background: #000;
           color: white;
           text-decoration: none; }
-        .service .divservice .divoption .option .butservice:hover {
+      .service .divservice .divoption .option:hover {
+        box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+        -webkit-transition: all 400ms linear 0s;
+        transition: all 400ms linear 0s; }
+        .service .divservice .divoption .option:hover .butservice {
           background: #DBCCA8; }
