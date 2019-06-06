@@ -1153,6 +1153,9 @@
   /* Fin de section contact */ }
 
 .upmenu {
+  position: fixed;
+  top: 0;
+  transition: .225s ease-out;
   width: 100%;
   height: 100px;
   background: #FFF; }
@@ -1191,7 +1194,8 @@
       width: 700px;
       text-decoration: none; }
     .upmenu .divmenu ul :hover {
-      background-color: #DBCCA8; }
+      background-color: #44D89E;
+      cursor: grab; }
   .upmenu .fbtel {
     margin-left: 25%;
     color: white; }
@@ -1202,6 +1206,40 @@
     .upmenu .teltxt span {
       text-align: center; }
 
+.upmenu.isdown {
+  transition: .225s ease-out;
+  background: #000;
+  width: 100%;
+  height: 60px;
+  background: #FFF; }
+  .upmenu.isdown ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    height: 60px;
+    margin-left: 12%; }
+  .upmenu.isdown li {
+    z-index: 2;
+    float: left;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center; }
+  .upmenu.isdown li a {
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+    width: 700px;
+    text-decoration: none; }
+  .upmenu.isdown .fbtel {
+    margin-left: 25%;
+    color: white; }
+    .upmenu.isdown .fbtel img {
+      height: 40px; }
+
 .titre {
   background-image: linear-gradient(-90deg, #24EACE, #1cbbe6);
   background-repeat: no-repeat;
@@ -1210,7 +1248,6 @@
   height: 95vh;
   width: 100%;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   /* Fin de la class entete */ }
 
 @keyframes img-ani {
@@ -1218,52 +1255,75 @@
     opacity: 0; }
   to {
     opacity: 1; } }
-  .titre .entete .textintro {
-    float: left;
-    color: #000;
-    width: 50%;
-    height: 40%; }
-    .titre .entete .textintro .textverty {
-      height: 50%; }
-      .titre .entete .textintro .textverty .middletext {
-        margin-top: 24%;
-        text-align: left;
-        width: 100%;
-        font-family: "Roboto", sans-serif; }
-        .titre .entete .textintro .textverty .middletext .bigtext {
-          margin-left: 28%;
-          font-size: 62px;
-          width: 100%;
-          color: white;
-          line-height: 82px; }
-        .titre .entete .textintro .textverty .middletext .littletext {
-          margin-left: 28%;
-          line-height: 28px;
-          font-size: 22px;
-          margin-top: 2%;
-          color: white; }
-        .titre .entete .textintro .textverty .middletext .buttonmain {
-          margin-left: 28%;
-          margin-top: 7%;
-          height: 65px;
-          width: 165px;
-          border-style: solid;
-          border-width: 6px;
-          background: #000;
-          border-radius: 35px;
-          font-size: 18px;
-          color: white;
-          text-decoration: none; }
-        .titre .entete .textintro .textverty .middletext .buttonmain:hover {
-          background: #DBCCA8; }
-  .titre .entete .imagepc {
-    width: 20%;
-    float: left; }
-    .titre .entete .imagepc .pcimg {
-      margin-left: 15%;
-      margin-top: 24%;
-      height: 680px;
-      width: 680px; }
+  .titre .entete {
+    -webkit-transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out;
+    transition: background .5s ease-out;
+    animation-name: img-ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif; }
+
+@keyframes img-ani {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    .titre .entete .textintro {
+      float: left;
+      color: #000;
+      width: 50%;
+      height: 40%; }
+      .titre .entete .textintro .textverty {
+        height: 50%; }
+        .titre .entete .textintro .textverty .middletext {
+          margin-top: 33%;
+          text-align: left;
+          width: 100%; }
+          .titre .entete .textintro .textverty .middletext .bigtext {
+            margin-left: 28%;
+            font-size: 62px;
+            width: 100%;
+            color: white;
+            line-height: 82px;
+            font-weight: bold; }
+          .titre .entete .textintro .textverty .middletext .bigtext2 {
+            margin-left: 28%;
+            font-size: 62px;
+            width: 100%;
+            color: white;
+            line-height: 82px; }
+          .titre .entete .textintro .textverty .middletext .littletext {
+            margin-left: 28%;
+            line-height: 28px;
+            font-size: 22px;
+            margin-top: 2%;
+            color: white; }
+          .titre .entete .textintro .textverty .middletext .buttonmain {
+            margin-left: 28%;
+            margin-top: 7%;
+            height: 55px;
+            width: 165px;
+            border: none;
+            background: #FFF;
+            border-radius: 35px;
+            font-size: 18px;
+            color: #44D89E;
+            font-weight: bold;
+            text-decoration: none; }
+          .titre .entete .textintro .textverty .middletext .buttonmain:hover {
+            background: #44D89E;
+            color: white;
+            cursor: grab; }
+    .titre .entete .imagepc {
+      width: 20%;
+      float: left; }
+      .titre .entete .imagepc .pcimg {
+        margin-left: 15%;
+        margin-top: 42%;
+        height: 680px;
+        width: 680px; }
 
 /* Fin de la class titre */
 .downArrow {
@@ -1331,7 +1391,7 @@
 .service {
   width: 100%;
   background: #FAFBFC;
-  margin-bottom: 5%; }
+  padding-bottom: 5%; }
   .service .divservice {
     width: 100%; }
     .service .divservice .introservice {
@@ -1339,6 +1399,7 @@
       text-align: center;
       width: 100%; }
       .service .divservice .introservice span {
+        margin-top: 5%;
         font-size: 62px;
         color: #44D89E;
         font-weight: 600; }
@@ -1351,49 +1412,50 @@
         font-family: "Montserrat", Arial, Tahoma, sans-serif;
         text-align: center;
         width: 20%;
-        height: 600px;
+        height: 500px;
         margin: 3%; }
         .service .divservice .divoption .option .bigtext {
           font-size: 36px;
           line-height: 46px;
-          font-weight: 400; }
+          font-weight: 400;
+          color: #000; }
         .service .divservice .divoption .option .middletext {
           font-size: 42px;
           line-height: 46px;
           font-weight: 400;
+          color: #000;
           margin-bottom: 5%; }
         .service .divservice .divoption .option .littletext {
           font-size: 22px;
           line-height: 46px;
-          font-weight: 400; }
+          font-weight: 400;
+          color: #888; }
         .service .divservice .divoption .option .imgformatage {
           width: 150px; }
         .service .divservice .divoption .option .butservice {
-          margin-top: 35%;
+          margin-top: 5%;
           height: 65px;
           width: 285px;
           border-style: solid;
           border-width: 2px;
           border-radius: 35px;
           font-size: 18px;
-          background: #000;
-          color: white;
-          text-decoration: none; }
+          background: #FFF;
+          color: black;
+          text-decoration: none;
+          cursor: grab; }
       .service .divservice .divoption .option:hover {
         box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
         -webkit-transition: all 400ms linear 0s;
         transition: all 400ms linear 0s; }
         .service .divservice .divoption .option:hover .butservice {
-          background: #DBCCA8; }
+          background: #44D89E; }
 
 .parallax {
-  /* The image used 
-  background-image: url('../img/parralax.jpg');
-*/
   /* Set a specific height */
-  min-height: 500px;
-  background: #F9BE72;
+  min-height: 650px;
   /* Create the parallax scrolling effect */
+  background-image: linear-gradient(-90deg, #FAB17A, #F9BE72);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1432,10 +1494,13 @@
         border-width: 2px;
         border-radius: 35px;
         font-size: 18px;
-        background: #44D89E;
-        color: white;
+        background: #FFF;
+        color: black;
         margin-top: 15%;
         text-decoration: none; }
+      .parallax .aboutme .aboutmiddle .butcontactbefore:hover {
+        background: #44D89E;
+        cursor: grab; }
   .parallax .aboutme2 {
     display: flex;
     align-items: center;
@@ -1445,6 +1510,7 @@
       width: 300px; }
 
 .aboutsection {
+  margin-top: 5%;
   width: 100%;
   display: flex;
   justify-content: center; }
@@ -1473,3 +1539,95 @@
         width: 600px; }
   .aboutsection .aboutme2 {
     width: 20%; }
+  .aboutsection .aboutme2.voir {
+    -webkit-transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out;
+    transition: background .5s ease-out;
+    animation-name: img-ani;
+    animation-duration: 1s;
+    animation-timing-function: ease-in; }
+
+@keyframes img-ani {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.introform {
+  margin-top: 5%;
+  text-align: center;
+  width: 100%; }
+  .introform span {
+    font-size: 62px;
+    color: #44D89E;
+    font-weight: 600; }
+
+.contactform {
+  width: 100%;
+  background: #fff;
+  margin-top: 3%;
+  font-family: roboto;
+  display: flex;
+  justify-content: center; }
+  .contactform .formform {
+    width: 45%; }
+  .contactform .contactone {
+    width: 100%;
+    float: left; }
+    .contactform .contactone .editnormal {
+      width: 48%;
+      float: left;
+      height: 4.0625em;
+      margin-left: 1%;
+      margin-right: 1%;
+      padding-left: 1%;
+      margin-top: 2%; }
+  .contactform .contacttwo {
+    width: 98%; }
+    .contactform .contacttwo .editlong {
+      padding-left: 1%;
+      margin-left: 1%;
+      margin-right: 1%;
+      margin-top: 2%;
+      width: 100%;
+      height: 4.0625em; }
+  .contactform .contactthree {
+    margin-top: 2%;
+    width: 98%;
+    margin-bottom: 2%; }
+    .contactform .contactthree .editlarge {
+      width: 100%;
+      height: 8.0625em;
+      padding-left: 1%;
+      margin-left: 1%;
+      margin-right: 1%; }
+  .contactform .buttondiv {
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: center; }
+    .contactform .buttondiv .butsend {
+      height: 65px;
+      width: 285px;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 35px;
+      font-size: 18px;
+      background: #FFF;
+      color: black;
+      text-decoration: none; }
+    .contactform .buttondiv .butsend:hover {
+      background: #44D89E;
+      cursor: grab; }
+
+.piedpage {
+  height: 150px;
+  background: #333;
+  display: table;
+  width: 100%; }
+  .piedpage span {
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+    text-align: center;
+    margin-top: 5%; }
