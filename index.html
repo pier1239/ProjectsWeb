@@ -24,9 +24,11 @@
          
 <div class="navigation">
     <ul>
-	<li class="scroll"> <a href="#" onclick="$('#home').animatescroll();"> Home </a></li>
-	<li class="scroll"> <a href="#" onclick="$('#portfolio').animatescroll();"> Portfolio </a></li>
-	<li class="scroll"> <a href="#" onclick="$('#skills').animatescroll();"> Skills </a></li>	
+	<li class="scroll"> <a href="#" onclick="$('#home').animatescroll();"> Accueil </a></li>
+	<li class="scroll"> <a href="#" onclick="$('#aboutsec').animatescroll();">À propros</a></li>
+	<li class="scroll"> <a href="#" onclick="$('#service').animatescroll();">Service </a></li>	
+	<li class="scroll"> <a href="#" onclick="$('#formsection').animatescroll();">Contact</a></li>	
+
     </ul>
 </div> 
 
@@ -49,12 +51,15 @@
 		<div class="divmenu">
             
             	<ul>
-            	<li> <a href="#" onclick="$('#home').animatescroll();"> Accueil </a></li>
-            	<li><a href="#" onclick="$('#aboutsec').animatescroll();">À propros </a></li>
-            	<li> <a href="#" onclick="$('#service').animatescroll();">Service </a> </li>
-            	<li class="oneli"><a href="#" onclick="$('#formsection').animatescroll();"> Contact</a> </li>
-            	<li class="fbtel"><a href="#" onclick="$('#contact').animatescroll();"> <img class="logoname" src="img/fbicon.png"> </a></li>
-            	<li class="lastli"><a href="#" onclick="$('#formsection').animatescroll();">Demande de soumission</a> </li>
+            	<li onclick="$('#home').animatescroll();"> <a href="#" > Accueil </a></li>
+            	<li  onclick="$('#aboutsec').animatescroll();"><a href="#" >À propros </a></li>
+            	<li onclick="$('#service').animatescroll();"> <a href="#" >Service </a> </li>
+            	<li class="oneli" onclick="$('#formsection').animatescroll();"><a href="#" > Contact</a> </li>
+            	</ul>
+
+            	<ul class="ulright">
+            			<li class="fbtel"><a href="https://www.facebook.com/W-D-Informatique-300537404227226/"> <img class="logoname" src="img/fbicon.png"> </a></li>
+            	<li class="lastli" onclick="$('#formsection').animatescroll();"><a href="#" >Demande de soumission</a> </li>
             	</ul>
 	       	
 	   </div>
@@ -79,7 +84,7 @@
 
   		    	<span><p class="littletext">Fait ta demande maintenant.</p></span>
 
-  		    	<button class="buttonmain">En savoir plus</button> 
+  		    	<button class="buttonmain" onclick="$('#aboutsec').animatescroll();">En savoir plus</button> 
   		    	
   		    </div>
   	    
@@ -113,8 +118,8 @@
 
 			<p class="titleabout2">De la création de site web à la réparation d'ordinateurs.</p>
 
-			<p class="titledesc1">Débutant en tant qu'entreprise, nous sommes três enthousiasmé à vous proposez des créations
-			de sites web à votre image ou de votre entreprise.</p>
+			<p class="titledesc1">Débutant en tant qu'entreprise, nous sommes três enthousiasme à vous proposez des créations
+			de site web à votre image ou de votre entreprise.</p>
 
 			<p class="titledesc1">De plus, notre devoirs et motivations est de réglé tous problêmes informatiques quel qui soit. Voiçi notre nouveau site web pour de plus ample détaille nous concernants.</p>
 			
@@ -123,7 +128,7 @@
 	</div>
 
 	<div class="aboutme2">
-		<img src="img/iphone4.png">
+		<img class="imgcell" src="img/iphone4.png">
 	</div>
 
 	</div>
@@ -152,7 +157,7 @@
             <p class="littletext">Sauvegarde inclus</p>
             <p class="littletext">Windows & MAC</p>
             <p class="littletext">Formatage rapide</p>
-            <button class="butservice">Lancez-vous</button>
+            <button class="butservice" onclick="$('#formsection').animatescroll();">Lancez-vous</button>
 				
 			</div>
 
@@ -163,7 +168,7 @@
             <p class="littletext">Hébergement</p>
             <p class="littletext">100% adaptée sur mobile</p>
              <p class="littletext">Modifiable à votre guise </p>
-            <button class="butservice">Faire une soumission</button>
+            <button class="butservice" onclick="$('#formsection').animatescroll();">Faire une soumission</button>
 				
 			</div>
 
@@ -174,7 +179,7 @@
             <p class="littletext">Remplacement de matériel</p>
             <p class="littletext">Livraison à domicile</p>
             <p class="littletext">Selon votre utilisation</p>
-            <button class="butservice">Lancez-vous</button>
+            <button class="butservice" onclick="$('#formsection').animatescroll();">Lancez-vous</button>
 				
 			</div>
 
@@ -208,7 +213,7 @@
 
 			<p class="titledesc1">Votre ordinateur va mal ? Vous voulez un beau site web rapidement et à bas prix ?</p>
 
-			<button class="butcontactbefore">Contactez-nous</button>
+			<button class="butcontactbefore" onclick="$('#formsection').animatescroll();" >Contactez-nous</button>
 			
 		</div>
 
@@ -239,13 +244,13 @@
 	<form action="/" method="POST" class="formform">
 
 	<div class="contactone">
-    <input type="text" name="name" class="editnormal" placeholder="Votre nom*">   
-    <input type="text" name="prenom" class="editnormal" placeholder="Votre prénom*">
+    <input type="text" name="name" class="editnormal" placeholder="Votre nom de famille*"  required>   
+    <input type="text" name="prenom" class="editnormal" placeholder="Votre prénom*"  required>
 	</div>
 
 	<div class="contactone">
     <input type="text" name="enterprise" class="editnormal" placeholder="Votre entreprise">   
-    <input type="text" name="email" class="editnormal" placeholder="Votre courriel*">
+    <input type="text" name="email" class="editnormal" placeholder="Votre courriel*"  required>
 	</div>
 
 	<div class="contacttwo">
@@ -253,11 +258,17 @@
 	</div>
 
     <div class="contacttwo">
-    <input type="text" name="prix" class="editlong" placeholder="Type de service*">
+   <select class="editlong" name="service">
+<option value ="Formatage">Formatage</option>
+<option value ="Création de site web">Création de site web</option>
+<option value ="Montage d'ordinateurs">Montage d'ordinateurs</option>
+
+</select> 
+
 	</div>
 
 	<div class="contactthree">
-	<input type="text" name="message" class="editlarge" placeholder="Description de votre demande">
+	<input type="text" name="message" class="editlarge" placeholder="Description de votre demande*"  required>
 	</div>
 
 <div class="buttondiv">
