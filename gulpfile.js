@@ -29,6 +29,12 @@ gulp.task('img', function() {
     .pipe(gulp.dest('app/img/'));
 });
 
+// Images compression
+gulp.task('imgservice', function() {
+  return gulp.src('src/images/imgservice/*')
+    .pipe(gulp.dest('app/img/imgservice/'));
+});
+
 // pdf compression
 gulp.task('pdf', function() {
   return gulp.src('src/document/*')
@@ -43,12 +49,12 @@ gulp.task('scripts', function() {
 });
 
 // Default task
-gulp.task('default', ['sass', 'html', 'img', 'pdf', 'scripts'], function() {
+gulp.task('default', ['sass', 'html', 'img', 'imgservice', 'pdf', 'scripts'], function() {
   console.log('******** Default task done ********');
 });
 
 // Gulp watch
-gulp.task('watch', ['sass', 'html', 'img', 'pdf', 'scripts'], function() {
+gulp.task('watch', ['sass', 'html', 'img', 'imgservice', 'pdf', 'scripts'], function() {
   console.log('******** Gulp is watching you ********');
   gulp.watch('src/scss/*.scss', ['sass']);
   gulp.watch('src/**/*.html', ['html']);

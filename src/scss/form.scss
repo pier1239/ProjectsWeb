@@ -1,0 +1,364 @@
+ /* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+
+.introform
+  {
+    margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  
+  span 
+  {
+
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+  }
+  }
+
+  .contactform
+  {
+width: 100%;
+          background: #fff;
+         margin-top: 3%;
+            font-family: roboto;    
+display: flex;
+ justify-content: center;
+
+  .formform
+  {
+
+width: 45%;
+
+  }
+
+ 
+
+
+
+    .contactone {
+  
+   
+  width: 100%;
+float: left;
+   .editnormal {
+   width: 48%;
+    float: left;
+    height: 4.0625em;
+   margin-left: 1%;
+   margin-right: 1%;
+   padding-left: 1%;
+    margin-top: 2%;
+    }
+  
+    }
+
+
+    .contacttwo {
+
+ width: 98%;
+
+
+    .editlong {
+    padding-left: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+   margin-top: 2%;
+    width: 100%;
+    height: 4.0625em;
+
+    }
+    }
+
+    .contactthree {
+
+   margin-top: 2%;
+width: 98%;
+     
+    margin-bottom: 2%;
+    .editlarge {
+  width: 100%;
+    height: 8.0625em;
+     padding-left: 1%;
+     margin-left: 1%;
+   margin-right: 1%;
+    }
+    }
+
+     .buttondiv {
+     
+       margin-bottom: 3%;
+     display: flex;
+ justify-content: center;
+    .butsend {
+     height: 65px;
+  width:285px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 18px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+
+    }
+
+    .butsend:hover
+    {
+    background: #44D89E;
+     cursor: grab;
+    }
+     
+    }
+
+
+    
+    }
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+.introform
+  {
+    margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  
+  span 
+  {
+
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+  }
+  }
+
+  .contactform
+  {
+width: 100%;
+          background: #fff;
+         margin-top: 3%;
+            font-family: roboto;    
+display: flex;
+ justify-content: center;
+
+  .formform
+  {
+
+width: 90%;
+
+  }
+
+ 
+
+
+
+    .contactone {
+  
+   
+  width: 100%;
+float: left;
+   .editnormal {
+   width: 100%;
+   
+    height: 4.0625em;
+   margin-left: 2%;
+   margin-right: 2%;
+   padding-left: 1%;
+    margin-top: 2%;
+    }
+  
+    }
+
+
+    .contacttwo {
+
+ width: 98%;
+
+
+    .editlong {
+    padding-left: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+   margin-top: 2%;
+    width: 100%;
+    height: 4.0625em;
+
+    }
+    }
+
+    .contactthree {
+
+   margin-top: 2%;
+width: 98%;
+     
+    margin-bottom: 5%;
+    .editlarge {
+  width: 100%;
+    height: 8.0625em;
+     padding-left: 1%;
+     margin-left: 1%;
+   margin-right: 1%;
+    }
+    }
+
+     .buttondiv {
+     
+       margin-bottom: 3%;
+     display: flex;
+ justify-content: center;
+    .butsend {
+     height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 16px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+
+    }
+
+    .butsend:hover
+    {
+    background: #44D89E;
+     cursor: grab;
+    }
+     
+    }
+
+
+    
+    }
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 1200px) {
+
+.introform
+  {
+    margin-top: 5%;
+  text-align: center;
+  width: 100%;
+  
+  span 
+  {
+
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+  }
+  }
+
+  .contactform
+  {
+width: 100%;
+          background: #fff;
+         margin-top: 3%;
+            font-family: roboto;    
+display: flex;
+ justify-content: center;
+
+  .formform
+  {
+
+width: 90%;
+
+  }
+
+ 
+
+
+
+    .contactone {
+  
+   
+  width: 98%;
+float: left;
+   .editnormal {
+   width: 100%;
+   
+    height: 4.0625em;
+   margin-left: 2%;
+   margin-right: 2%;
+   padding-left: 1%;
+    margin-top: 2%;
+    }
+  
+    }
+
+
+    .contacttwo {
+
+ width: 98%;
+
+
+    .editlong {
+    padding-left: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+   margin-top: 2%;
+    width: 100%;
+    height: 4.0625em;
+
+    }
+    }
+
+    .contactthree {
+
+   margin-top: 2%;
+width: 98%;
+     
+    margin-bottom: 5%;
+    .editlarge {
+  width: 100%;
+    height: 8.0625em;
+     padding-left: 1%;
+     margin-left: 2%;
+   margin-right: 2%;
+    }
+    }
+
+     .buttondiv {
+     
+       margin-bottom: 3%;
+     display: flex;
+ justify-content: center;
+    .butsend {
+     height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 16px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+
+    }
+
+    .butsend:hover
+    {
+    background: #44D89E;
+     cursor: grab;
+    }
+     
+    }
+
+
+    
+    }
+
+}
+
+
+  

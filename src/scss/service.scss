@@ -1,0 +1,372 @@
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+
+.service
+{
+	width: 100%;
+background: #FAFBFC;
+padding-bottom: 5%;
+
+
+.divservice
+{
+	width: 100%;
+
+	  
+	.introservice
+	{
+	margin-top: 5%;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5%;
+	
+	span 
+	{
+margin-top: 5%;
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+	}
+	}
+
+	.divoption 
+	{
+	width: 100%;
+	display: flex;
+    justify-content: center;
+.option
+	{
+	float: left;
+	font-family: "Montserrat", Arial, Tahoma, sans-serif;
+	text-align: center;
+margin-left: 3%;
+	margin-right:3%;
+	width: 25%;
+	height: 500px;
+	
+
+	.bigtext
+	{
+	font-size: 26px;
+    line-height: 36px;
+    font-weight: 400;
+        color: #000;
+	}
+
+	.middletext
+	{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+     color: #000;
+     margin-bottom: 5%;
+	}
+
+	.littletext
+	{
+
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #888;
+        
+	}
+
+	.imgformatage
+	{
+	width: 150px;
+
+	}
+
+	.butservice
+	{
+
+margin-top:5%;
+  height: 65px;
+  width:285px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 18px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+ cursor: grab;
+	}
+
+
+
+	}
+
+	.option:hover
+	{
+	 box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+
+   -webkit-transition: all 400ms linear 0s;
+       transition: all 400ms linear 0s;
+
+       .butservice
+	{
+	background: #44D89E;
+	}
+	}
+	}
+
+
+}
+
+
+
+}
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+.service
+{
+	width: 100%;
+background: #FAFBFC;
+padding-bottom: 15%;
+
+
+.divservice
+{
+	width: 100%;
+
+	  
+	.introservice
+	{
+	margin-top: 5%;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5%;
+	span 
+	{
+margin-top: 5%;
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+	}
+	}
+
+	.divoption 
+	{
+	width: 100%;
+	
+.option
+	{
+	
+	font-family: "Montserrat", Arial, Tahoma, sans-serif;
+	text-align: center;
+
+	width: 100%;
+	height: 500px;
+	
+
+	.bigtext
+	{
+	font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+        color: #000;
+	}
+
+	.middletext
+	{
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 400;
+     color: #000;
+     margin-bottom: 5%;
+	}
+
+	.littletext
+	{
+
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #888;
+        
+	}
+
+	.imgformatage
+	{
+	width: 150px;
+
+	}
+
+	.butservice
+	{
+
+margin-top:5%;
+  height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 14px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+ cursor: grab;
+	}
+
+
+
+	}
+
+	.option:hover
+	{
+	 box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+
+   -webkit-transition: all 400ms linear 0s;
+       transition: all 400ms linear 0s;
+
+       .butservice
+	{
+	background: #44D89E;
+	}
+	}
+	}
+
+
+}
+
+
+
+}
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 1200px) {
+
+.service
+{
+	width: 100%;
+background: #FAFBFC;
+
+
+
+.divservice
+{
+	width: 100%;
+
+	  
+	.introservice
+	{
+	margin-top: 5%;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 5%;
+	span 
+	{
+margin-top: 5%;
+   font-size: 62px;
+color: #44D89E;
+font-weight: 600;
+	}
+	}
+
+	.divoption 
+	{
+	width: 100%;
+	
+.option
+	{
+	
+	font-family: "Montserrat", Arial, Tahoma, sans-serif;
+	text-align: center;
+
+	width: 100%;
+	height: 600px;
+
+	
+
+	.bigtext
+	{
+	font-size: 30px;
+    line-height: 46px;
+    font-weight: 400;
+        color: #000;
+	}
+
+	.middletext
+	{
+    font-size: 34px;
+    line-height: 46px;
+    font-weight: 400;
+     color: #000;
+     margin-bottom: 5%;
+	}
+
+	.littletext
+	{
+
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #888;
+        
+	}
+
+	.imgformatage
+	{
+	width: 150px;
+
+	}
+
+	.butservice
+	{
+
+margin-top:5%;
+  height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 14px;
+background: #FFF;
+color: black; 
+ text-decoration: none;
+ cursor: grab;
+	}
+
+
+
+	}
+
+	.option:hover
+	{
+	 box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
+
+   -webkit-transition: all 400ms linear 0s;
+       transition: all 400ms linear 0s;
+
+       .butservice
+	{
+	background: #44D89E;
+	}
+	}
+	}
+
+
+}
+
+
+
+}
+
+
+}
+

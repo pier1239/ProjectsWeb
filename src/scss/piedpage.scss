@@ -1,0 +1,14 @@
+.piedpage  {
+	height: 150px;
+	background: #333;
+    display: table;
+    width:100%;
+    
+	span {
+	vertical-align: middle;
+    display: table-cell;
+	color: white;
+	text-align: center;
+	margin-top: 5%;
+	}
+}

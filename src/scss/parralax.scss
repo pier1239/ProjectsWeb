@@ -1,0 +1,322 @@
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+
+.parallax {
+ 
+  /* Set a specific height */
+  min-height: 650px; 
+  
+  /* Create the parallax scrolling effect */
+  background-image: linear-gradient(-90deg, #FAB17A, #F9BE72);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+ justify-content: center;
+
+
+  	.aboutme
+{
+margin-top: 3%;
+	width: 40%;
+	display: flex;
+    align-items: center;
+    margin-right: 5%;
+
+	.aboutmiddle
+	{
+	text-align: left;
+	width: 30%;
+	
+	font-family: 'Poppins', sans-serif; 
+
+	.titleabout1
+	{
+font-size: 20px;
+color: #E0E0E0;
+font-weight: 600;
+
+	}
+
+.titleabout2
+	{
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	margin-top: 5%;
+width: 600px;
+	}
+
+.titledesc1
+	{
+	font-size: 18px;
+	color: white;;
+	margin-top: 1%;
+	margin-top: 5%;
+	width: 600px;
+
+	}
+
+	.butcontactbefore
+	{
+	 height: 65px;
+  width:285px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 18px;
+background: #FFF;
+color: black; 
+margin-top: 15%;
+ text-decoration: none;
+
+	}
+
+	.butcontactbefore:hover
+	{
+		background: #44D89E;
+		 cursor: grab;
+	}
+
+	}
+
+	
+}
+
+.aboutme2
+{
+display: flex;
+    align-items: center;
+width: 20%;
+
+img
+{
+	height: 300px;
+	width: 300px;
+}
+
+}
+ 
+
+	
+
+	
+}
+ 
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+
+.parallax {
+ 
+  /* Set a specific height */
+  min-height: 650px; 
+  
+  /* Create the parallax scrolling effect */
+  background-image: linear-gradient(-90deg, #FAB17A, #F9BE72);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+    align-items: center;
+
+  	.aboutme
+{
+
+margin-top: 3%;
+	width: 100%;
+	
+
+	.aboutmiddle
+	{
+	text-align: center;
+	width: 100%;
+	
+	font-family: 'Poppins', sans-serif; 
+
+	.titleabout1
+	{
+font-size: 22px;
+color: #E0E0E0;
+font-weight: 600;
+
+	}
+
+.titleabout2
+	{
+	font-weight: bold;
+	color: white;
+	font-size: 28px;
+	margin-top: 5%;
+width: 100%;
+	}
+
+.titledesc1
+	{
+	font-size: 20px;
+	color: white;;
+	margin-top: 1%;
+	margin-top: 5%;
+	width: 100%;
+
+	}
+
+	.butcontactbefore
+	{
+	 height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 16px;
+background: #FFF;
+color: black; 
+margin-top: 15%;
+ text-decoration: none;
+
+	}
+
+	.butcontactbefore:hover
+	{
+		background: #44D89E;
+		 cursor: grab;
+	}
+
+	}
+
+	
+}
+
+.aboutme2
+{
+display: none;
+width: 100%;
+
+img
+{
+	height: 300px;
+	width: 300px;
+}
+
+}
+ 	
+}
+
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 1200px) {
+
+.parallax {
+ 
+  /* Set a specific height */
+  min-height: 650px; 
+  
+  /* Create the parallax scrolling effect */
+  background-image: linear-gradient(-90deg, #FAB17A, #F9BE72);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+    align-items: center;
+
+  	.aboutme
+{
+
+margin-top: 3%;
+	width: 100%;
+	
+
+	.aboutmiddle
+	{
+	text-align: center;
+	width: 100%;
+	
+	font-family: 'Poppins', sans-serif; 
+
+	.titleabout1
+	{
+font-size: 22px;
+color: #E0E0E0;
+font-weight: 600;
+
+	}
+
+.titleabout2
+	{
+	font-weight: bold;
+	color: white;
+	font-size: 28px;
+	margin-top: 5%;
+width: 100%;
+	}
+
+.titledesc1
+	{
+	font-size: 20px;
+	color: white;;
+	margin-top: 1%;
+	margin-top: 5%;
+	width: 100%;
+
+	}
+
+	.butcontactbefore
+	{
+	 height: 65px;
+  width:235px;
+   border-style: solid;
+   border-width: 2px;
+  border-radius: 35px; 
+font-size: 16px;
+background: #FFF;
+color: black; 
+margin-top: 15%;
+ text-decoration: none;
+
+	}
+
+	.butcontactbefore:hover
+	{
+		background: #44D89E;
+		 cursor: grab;
+	}
+
+	}
+
+	
+}
+
+.aboutme2
+{
+display: none;
+width: 100%;
+
+img
+{
+	height: 300px;
+	width: 300px;
+}
+
+}
+ 	
+}
+}
+
+
+
+  
