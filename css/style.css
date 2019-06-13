@@ -1369,7 +1369,8 @@
       display: flex;
       justify-content: center; }
       .aboutsection .aboutme2 .imgcell {
-        width: 200px; }
+        width: 200px;
+        height: 200px; }
     .aboutsection .aboutme2.voir {
       -webkit-transition: background .5s ease-out;
       -moz-transition: background .5s ease-out;
